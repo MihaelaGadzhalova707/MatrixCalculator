@@ -21,6 +21,7 @@
 #include "MultiplicationByScalar.h"
 #include "MultiplicationByMatrix.h"
 #include "DeterminantOfMatrix.h"
+#include "DivideByScalar.h"
 
 using namespace std;
 
@@ -67,6 +68,12 @@ int main() {
 		cout << "The determinant of the matrix is: ";
 		cout << determinantOfMatrix(matrix, matrixSize); 
 		cout << "\n"; break;
+	case '/':
+		int divider;
+		cout << "Input a scalar: ";
+		cin >> divider;
+		cout << "\n";
+		divideByScalar(matrix, matrixSize, divider); break;
 	}
 	freeMatrix(matrix, matrixSize);
 

@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DeterminantOfMatrix.cpp" />
+    <ClCompile Include="DivideByScalar.cpp" />
     <ClCompile Include="FreeMatrix.cpp" />
     <ClCompile Include="InputMatrix.cpp" />
     <ClCompile Include="main.cpp" />
@@ -149,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DeterminantOfMatrix.h" />
+    <ClInclude Include="DivideByScalar.h" />
     <ClInclude Include="FreeMatrix.h" />
     <ClInclude Include="MultiplicationByMatrix.h" />
     <ClInclude Include="MultiplicationByScalar.h" />
