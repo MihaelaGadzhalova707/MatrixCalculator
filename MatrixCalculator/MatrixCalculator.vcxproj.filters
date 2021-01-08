@@ -24,6 +24,15 @@
     <ClInclude Include="FreeMatrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MultiplicationByScalar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiplicationByMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeterminantOfMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +45,15 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="FreeMatrix.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiplicationByScalar.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiplicationByMatrix.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeterminantOfMatrix.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

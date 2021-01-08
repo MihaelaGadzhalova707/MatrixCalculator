@@ -18,6 +18,10 @@
 #include "PrintMatrix.h"
 #include "FreeMatrix.h"
 
+#include "MultiplicationByScalar.h"
+#include "MultiplicationByMatrix.h"
+#include "DeterminantOfMatrix.h"
+
 using namespace std;
 
 int main() {
@@ -32,10 +36,38 @@ int main() {
 		matrix[i] = new int[matrixSize];
 	}
 
+	int** secondMatrix = new int* [matrixSize];
+	for (int i = 0; i < matrixSize; i++)
+	{
+		secondMatrix[i] = new int[matrixSize];
+	}
+
+	cout << "Input a matrix: \n";
 	inputMatrix(matrix, matrixSize);
 
-	printMatrix(matrix, matrixSize);
+	//printMatrix(matrix, matrixSize);
 
+	char operation;
+	cout << "Input operation: ";
+	cin >> operation;
+	cout << "\n";
+
+	switch (operation) {
+
+	case 's':
+		int scalar;
+		cout << "Input a scalar: ";
+		cin >> scalar;
+		multiplicationByScalar(matrix, matrixSize, scalar); break;
+	case 'x':
+		cout << "Input second matrix: \n";
+		inputMatrix(secondMatrix, matrixSize);
+		multiplicationByMatrix(matrix, secondMatrix, matrixSize); break;
+	case 'd':
+		cout << "The determinant of the matrix is: ";
+		cout << determinantOfMatrix(matrix, matrixSize); 
+		cout << "\n"; break;
+	}
 	freeMatrix(matrix, matrixSize);
 
 	return 0;

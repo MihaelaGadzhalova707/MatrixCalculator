@@ -139,13 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DeterminantOfMatrix.cpp" />
     <ClCompile Include="FreeMatrix.cpp" />
     <ClCompile Include="InputMatrix.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MultiplicationByMatrix.cpp" />
+    <ClCompile Include="MultiplicationByScalar.cpp" />
     <ClCompile Include="PrintMatrix.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DeterminantOfMatrix.h" />
     <ClInclude Include="FreeMatrix.h" />
+    <ClInclude Include="MultiplicationByMatrix.h" />
+    <ClInclude Include="MultiplicationByScalar.h" />
     <ClInclude Include="PrintMatrix.h" />
     <ClInclude Include="InputMatrix.h" />
   </ItemGroup>
