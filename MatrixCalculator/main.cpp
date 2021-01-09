@@ -22,6 +22,7 @@
 #include "MultiplicationByMatrix.h"
 #include "DeterminantOfMatrix.h"
 #include "DivideByScalar.h"
+#include "TransposeOfMatrix.h"
 
 using namespace std;
 
@@ -74,6 +75,8 @@ int main() {
 		cin >> divider;
 		cout << "\n";
 		divideByScalar(matrix, matrixSize, divider); break;
+	case 't':
+		transposeOfMatrix(matrix, matrixSize);
 	}
 	freeMatrix(matrix, matrixSize);
 
