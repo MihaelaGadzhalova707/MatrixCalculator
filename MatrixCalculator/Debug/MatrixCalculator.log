@@ -1,2 +1,12 @@
-﻿  InputMatrix.cpp
+﻿  DeterminantOfMatrix.cpp
+  DivideByScalar.cpp
+  WriteAndReadFile.cpp
+  InputMatrix.cpp
+  InverseMatrix.cpp
+  main.cpp
+  MultiplicationByMatrix.cpp
+  MultiplicationByScalar.cpp
+  PrintMatrix.cpp
+  TransposeMatrix.cpp
+  Generating Code...
   MatrixCalculator.vcxproj -> G:\Files\For uni\3. Third semester\Увод в програмирането Part 2\MatrixCalculator\Debug\MatrixCalculator.exe

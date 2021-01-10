@@ -36,6 +36,15 @@
     <ClInclude Include="DivideByScalar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InverseMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteAndReadFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransposeMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -60,6 +69,15 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="DivideByScalar.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InverseMatrix.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteAndReadFile.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransposeMatrix.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -9,7 +9,7 @@
 * @idnumber 62452
 * @compiler VS
 *
-*
+*File function: this file ex the basic functions of the matrix calculator
 *
 */
 
@@ -18,46 +18,39 @@
 #include "PrintMatrix.h"
 #include "FreeMatrix.h"
 
-#include "InputAndReadFile.h"
+#include "WriteAndReadFile.h"
 #include "MultiplicationByScalar.h"
 #include "MultiplicationByMatrix.h"
 #include "DeterminantOfMatrix.h"
 #include "DivideByScalar.h"
-#include "TransposeOfMatrix.h"
+#include "TransposeMatrix.h"
 
 
 using namespace std;
 
 int main() {
 
-	inputAndReadFile();
+	writeAndReadFile();
 
 	int matrixSize = 0;
 	cout << "Input size of the matrix: ";
 	cin >> matrixSize;
 
+	//Allocate memory for first matrix
 	int** matrix = new int* [matrixSize];
-	for (int i = 0; i < matrixSize; i++)
-	{
+	for (int i = 0; i < matrixSize; i++) {
 		matrix[i] = new int[matrixSize];
 	}
 
+	//Allocate memory for second matrix
 	int** secondMatrix = new int* [matrixSize];
-	for (int i = 0; i < matrixSize; i++)
-	{
+	for (int i = 0; i < matrixSize; i++) {
 		secondMatrix[i] = new int[matrixSize];
-	}
-
-	double** doubleMatrix = new double* [matrixSize];
-	for (int i = 0; i < matrixSize; i++)
-	{
-		doubleMatrix[i] = new double[matrixSize];
 	}
 
 	cout << "Input a matrix: \n";
 	inputMatrix(matrix, matrixSize);
 
-	//printMatrix(matrix, matrixSize);
 
 	char operation;
 	cout << "Input operation: ";
@@ -70,26 +63,41 @@ int main() {
 		int scalar;
 		cout << "Input a scalar: ";
 		cin >> scalar;
-		multiplicationByScalar(matrix, matrixSize, scalar); break;
+		multiplicationByScalar(matrix, matrixSize, scalar); 
+		break;
+
 	case '2':
 		cout << "Input second matrix: \n";
 		inputMatrix(secondMatrix, matrixSize);
-		multiplicationByMatrix(matrix, secondMatrix, matrixSize); break;
+		multiplicationByMatrix(matrix, secondMatrix, matrixSize);
+		break;
+
 	case '3':
 		cout << "The determinant of the matrix is: ";
 		cout << determinantOfMatrix(matrix, matrixSize); 
-		cout << "\n"; break;
+		cout << "\n"; 
+		break;
+
 	case '4':
 		int divider;
 		cout << "Input a scalar: ";
 		cin >> divider;
 		cout << "\n";
-		divideByScalar(doubleMatrix, matrixSize, divider); break;
+		divideByScalar(matrix, matrixSize, divider); 
+		break;
+
+	case '5':
+		cout << "I'm sorry! I couldn't do this function! You can't find the inverse matrix\n";
+		break;
+
 	case '6':
-		transposeOfMatrix(matrix, matrixSize); break;
+		transposeMatrix(matrix, matrixSize); 
+		break;
+
 	default: 
 		cout << "Error!"; break;
 	}
+
 	freeMatrix(matrix, matrixSize);
 
 	return 0;
