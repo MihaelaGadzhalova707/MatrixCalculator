@@ -9,7 +9,7 @@
 * @idnumber 62452
 * @compiler VS
 *
-*File function: this file ex the basic functions of the matrix calculator
+*File function: this file executes the basic functions of the matrix calculator
 *
 */
 
